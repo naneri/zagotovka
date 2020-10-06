@@ -6,7 +6,7 @@
     <h1>Dashboard</h1>
 @stop
 
-@section('content')
+@section('internal')
     <div id="app">
         <p>Welcome to this beautiful admin panel.</p>
     </div>
