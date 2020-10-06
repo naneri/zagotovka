@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        session()->flash('alert', [
+            'type'  => 'info',
+            'message' => 'hey kana',
+        ]);
         return view('home');
     }
 }
