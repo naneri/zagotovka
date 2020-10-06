@@ -27,6 +27,7 @@ class HomeController extends Controller
             'type'  => 'info',
             'message' => 'hey kana',
         ]);
+
         return view('home');
     }
 }
