@@ -23,12 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        session()->flash('notification', [
-            'type'  => 'warning',
-            'message' => 'hey kana',
-            'icon'  => 'fas fa-info'
-        ]);
-
         return view('home');
     }
 }

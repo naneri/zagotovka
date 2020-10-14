@@ -10,4 +10,17 @@
     <div id="app">
         <p>Welcome to this beautiful admin panel.</p>
     </div>
+
+    <div class="row">
+         <div class="col-md-12">
+             <div class="card">
+                 <div class="card-header with-border">
+                    @include('partials._tools')
+                 </div>
+                 <div class="card-body">
+                     Asd
+                 </div>
+             </div>
+         </div>
+    </div>
 @stop
