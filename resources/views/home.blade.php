@@ -18,7 +18,6 @@
                     @include('partials._tools')
                  </div>
                  <div class="card-body">
-                     Asd
                  </div>
              </div>
          </div>

@@ -24,3 +24,13 @@ session()->flash('notification', [
     'icon'  => 'fas fa-info'
 ]);
 ```
+
+
+## Delete buttons
+
+You can add a delete button like this: 
+```
+<a href="posts/2" data-method="delete" data-token="{{ csrf_token() }}" data-confirm="Are you sure?">
+```
+method is defined as `data-method`, csrf-token is defined as `data-token`, the confirm message is defined as `data-confirm`. 
+The details can be found in `resources/js/laravel.js`
