@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/account/change-password', 'AccountController@changePassword');
+    Route::post('/account/update-password', 'AccountController@updatePassword')->name('update-password');
+});

@@ -14,7 +14,11 @@
     <div class="row">
         @if(!is_null(session("notification")))
             <div class="col-md-6 offset-md-3">
-                <div class="alert alert-{{session('notification')['type']}} alert-dismissible">
+                @if(isset(session('notification')['type']))
+                    <div class="alert alert-{{session('notification')['type']}} alert-dismissible">
+                @else
+                    <div class="alert alert-success alert-dismissible">
+                @endif
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                     <h5>
                         @if(isset(session("notification")['icon']))
@@ -33,7 +37,11 @@
 @push("js")
     <script>
         @if(!is_null(session('alert')))
-            toastr.{{session('alert')['type']}}('{{session('alert')['message']}}')
+            @if(!isset(session('alert')['type']))
+                toastr.success('{{session('alert')['message']}}')
+            @else
+                toastr.{{session('alert')['type']}}('{{session('alert')['message']}}')
+            @endif
         @endif
     </script>
 @endpush

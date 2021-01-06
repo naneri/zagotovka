@@ -9,8 +9,8 @@ Alert can be added by flashing data to a `alert` session key. Type can be define
 Here is a sample usage: 
 ```
 session()->flash('alert', [
-    'type'  => 'info',
-    'message' => 'hey kana',
+    'message' => 'hey kana',  // required
+    'type'    => 'info',      // optional, success by default 
 ]);
 ```
 
@@ -19,9 +19,9 @@ Notifications can be also flashed. They have both type and message that are requ
 Here is a sample usage: 
 ```
 session()->flash('notification', [
-    'type'  => 'warning',
-    'message' => 'hey kana',
-    'icon'  => 'fas fa-info'
+    'message' => 'hey kana',    //required
+    'type'    => 'warning',     // optional, success by default
+    'icon'    => 'fas fa-info'  // optional, empty by default
 ]);
 ```
 
