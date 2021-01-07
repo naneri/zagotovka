@@ -32,7 +32,7 @@
                         </div>
                     @endif
                 </div>
-                @yield('internal')
+        @yield('internal')
     </div>
 @endsection
 
