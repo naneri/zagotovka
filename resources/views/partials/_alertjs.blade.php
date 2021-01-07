@@ -1,0 +1,9 @@
+<script>
+    @if(!is_null(session('alert')))
+        @if(!isset(session('alert')['type']))
+            toastr.success('{{session('alert')['message']}}')
+        @else
+            toastr.{{session('alert')['type']}}('{{session('alert')['message']}}')
+        @endif
+    @endif
+</script>
