@@ -7,7 +7,7 @@
 @stop
 
 @section('internal')
-    <div id="app">
+    <div>
         <p>Welcome to this beautiful admin panel.</p>
     </div>
 
@@ -21,5 +21,8 @@
                  </div>
              </div>
          </div>
+    </div>
+    <div class="row">
+        @include("samples._card")
     </div>
 @stop

@@ -4,6 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import OverlayComponent from "./components/OverlayComponent";
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -21,6 +23,7 @@ window.toastr = require('toastr');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('overlay-component', OverlayComponent);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
