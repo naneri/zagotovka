@@ -18,7 +18,7 @@
             <a href="#" class="dropdown-item">Separated link</a>
         </div>
     </div>
-    <button type="button" class="btn btn-tool text-green" data-card-widget="remove">
-        <i class="fas fa-info-circle"></i>
+    <button type="button" class="btn btn-tool" data-card-widget="remove">
+        <i class="fas fa-times"></i>
     </button>
 </div>
