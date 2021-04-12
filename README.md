@@ -1,6 +1,6 @@
 ## Installation 
 
-To install simply run `make install`. 
+To install simply run `make install`.   
 If you need to setup permissions run `make set-permissions`
 
 ## Page structure
