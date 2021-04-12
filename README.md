@@ -1,3 +1,8 @@
+## Installation 
+
+To install simply run `make install`. 
+If you need to setup permissions run `make set-permissions`
+
 ## Page structure
 
 To create a page, you need to extend the `layouts._app` blade. 
