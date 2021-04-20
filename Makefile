@@ -1,8 +1,5 @@
-install:
+install: update
 	cp .env.example .env
-	composer install
-	npm install
-	npm run dev
 	php artisan key:generate
 	touch database/database.sqlite
 
@@ -16,3 +13,8 @@ serve:
 install-db:
 	php artisan migrate
 	php artisan db:seed
+
+update:
+	composer install
+	npm install
+	npm run dev
