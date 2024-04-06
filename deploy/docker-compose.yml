@@ -42,8 +42,17 @@ services:
         ports:
             - "${DOCKER_DB_PORT}:3306"
 
+    npm:
+      image: node:16.19-alpine
+      working_dir: /var/www/
+      volumes:
+        - ./..:/var/www/
+      entrypoint: ['npm']
+
     # cache container
     # cache:
     #     image: redis:3.0
     #     ports:
     #         - "${DOCKER_CACHE_PORT}:6379"
+
+    # compose is inside the up.sh file
