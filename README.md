@@ -1,7 +1,14 @@
 ## Installation 
 
+**OLD INSTRUCTION**  
+
 To install simply run `make install`.   
 If you need to setup permissions run `make set-permissions`
+
+**NEW INSTRUCTION**
+* go to `/deploy` folder and run `docker-compose up -d` 
+* run `sh deploy/up.sh`
+* run all commands in the `/deploy/Makefile`
 
 ## Page structure
 
@@ -39,3 +46,7 @@ You can add a delete button like this:
 ```
 method is defined as `data-method`, csrf-token is defined as `data-token`, the confirm message is defined as `data-confirm`. 
 The details can be found in `resources/js/laravel.js`
+
+## Admin LTE Samples: 
+
+https://adminlte.io/themes/v3/
