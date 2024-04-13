@@ -16,6 +16,7 @@ services:
     # app with php container
     app:
         restart: unless-stopped
+        container_name: "${DOCKER_PHP_NAME}"
         build:
             context: ./
             dockerfile: php/app.docker
